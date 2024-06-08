@@ -17,11 +17,12 @@ export function SocialMedias({ links }: socialMediasProps) {
                 <div className="w-fit min-w-80 flex gap-2 p-3 text-2xl sm:text-3xl flex-wrap">
                     {links.map((link, key) => (
                         <a
+                            target="_blank"
                             className="text-[#f4f4f2] bg-[#243a69] rounded-full p-2 shadow-md hover:bg-[#5b88a5] transition-all duration-75"
                             key={key}
                             href={link.link}
                         >
-                            <SocialIcons icon={link.icon}/>
+                            <SocialIcons icon={link.icon} />
                         </a>
                     ))}
 
